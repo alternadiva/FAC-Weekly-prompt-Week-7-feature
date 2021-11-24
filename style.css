@@ -1,0 +1,11 @@
+#table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: blanchedalmond;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+}
