@@ -1,11 +1,43 @@
 #table {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  perspective: 1000px; /*property sets how far in the z plane the object is from the user. The lower the value the bigger the perspective effect.*/
 }
 
 .cards {
   background-color: blanchedalmond;
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
+  margin: 2px;
   border: 1px solid black;
+  position: relative;
+  transform-style: preserve-3d; /*to position them in the 3D space created in the parent, instead of flattening it to the z = 0 plane*/
+  transform: scale(1);
+}
+
+.cards:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s;
+}
+
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.flip {
+  transform: rotateY(180deg);
 }
