@@ -106,7 +106,9 @@ cards.forEach(card => card.addEventListener('click', flipCards))
 function popUpDescription() {
     for (let i = 0; i < descriptions.length; i++) {
         if (descriptions[i].dataset.id === firstData) {
-            descriptions[i].removeAttribute('hidden', '');
+            setTimeout(function () {
+                descriptions[i].removeAttribute('hidden', '');
+            }, 1000);
             description = descriptions[i];
         }
     }
