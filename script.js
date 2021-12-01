@@ -3,6 +3,10 @@ const table = document.getElementById("table");
 const cards = document.querySelectorAll(".cards");
 const cardOrder = table.children;
 
+const descriptions = document.querySelectorAll(".description");
+let description;
+const closeButton = document.querySelectorAll(".close-button")
+
 // shuffle cards on page load - add function and add event listener
 
 let fragment = document.createDocumentFragment(); //This method creates the document fragment, then append the elements of the document to the document fragment and make the changes according to the need. It is a safe method and thus prevents destroying of the DOM structure.
@@ -59,6 +63,7 @@ function isItAMatch() {
     let match = firstData === secondData;
 
     if (match === true) {
+        popUpDescription();
         disableCards();
     }
     else {
@@ -96,4 +101,20 @@ function resetTable() {
 
 cards.forEach(card => card.addEventListener('click', flipCards))
 
-console.log(lockTable)
+//popup div on card match + close div
+
+function popUpDescription() {
+    for (let i = 0; i < descriptions.length; i++) {
+        if (descriptions[i].dataset.id === firstData) {
+            descriptions[i].removeAttribute('hidden', '');
+            description = descriptions[i];
+        }
+    }
+}
+
+function closeDescription() {
+    description.setAttribute('hidden','');
+}
+
+closeButton.forEach(x => x.addEventListener('click', closeDescription));
+
