@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,74 +8,122 @@
     <link rel="stylesheet" href="style.css">
     <title>Memory card game</title>
 </head>
+
 <body>
     <p>Get to know me while playing the memory card game</p>
     <div id="table">
-            <div class="cards" id="card1" data-id="card1">
-                <p class="back">Back 1</p>
-                <img class="front" src="./icons/candle.png" alt="">
-            </div>
-            <div class="cards" id="card2" data-id="card1">
-                <p class="back">Back 1</p>
-                <img class="front" src="./icons/candle.png" alt="">
-            </div>
-            <div class="cards" id="card3" data-id="card2">
-                <p class="back">Back 2</p>
-                <img class="front" src="./icons/paw.png" alt="">
-            </div>
-            <div class="cards" id="card4" data-id="card2">
-                <p class="back">Back 2</p>
-                <img class="front" src="./icons/paw.png" alt="">
-            </div>
-            <div class="cards" id="card5" data-id="card3">
-                <p class="back">Back 3</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card6" data-id="card3">
-                <p class="back">Back 3</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card7" data-id="card4">
-                <p class="back">Back 4</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card8" data-id="card4">
-                <p class="back">Back 4</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card9" data-id="card5">
-                <p class="back">Back 5</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card10" data-id="card5">
-                <p class="back">Back 5</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card11" data-id="card6">
-                <p class="back">Back 6</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card12" data-id="card6">
-                <p class="back">Back 6</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card13" data-id="card7">
-                <p class="back">Back 7</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card14" data-id="card7">
-                <p class="back">Back 7</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card15" data-id="card8">
-                <p class="back">Back 8</p>
-                <img class="front" src="" alt="">
-            </div>
-            <div class="cards" id="card16" data-id="card8">
-                <p class="back">Back 8</p>
-                <img class="front" src="" alt="">
-            </div>
+        <div class="cards" id="card1" data-id="card1">
+            <p class="back">Back 1</p>
+            <img class="front" src="./icons/candle.png" alt="">
+        </div>
+        <div class="cards" id="card2" data-id="card1">
+            <p class="back">Back 1</p>
+            <img class="front" src="./icons/candle.png" alt="">
+        </div>
+        <div class="cards" id="card3" data-id="card2">
+            <p class="back">Back 2</p>
+            <img class="front" src="./icons/paw.png" alt="">
+        </div>
+        <div class="cards" id="card4" data-id="card2">
+            <p class="back">Back 2</p>
+            <img class="front" src="./icons/paw.png" alt="">
+        </div>
+        <div class="cards" id="card5" data-id="card3">
+            <p class="back">Back 3</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card6" data-id="card3">
+            <p class="back">Back 3</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card7" data-id="card4">
+            <p class="back">Back 4</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card8" data-id="card4">
+            <p class="back">Back 4</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card9" data-id="card5">
+            <p class="back">Back 5</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card10" data-id="card5">
+            <p class="back">Back 5</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card11" data-id="card6">
+            <p class="back">Back 6</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card12" data-id="card6">
+            <p class="back">Back 6</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card13" data-id="card7">
+            <p class="back">Back 7</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card14" data-id="card7">
+            <p class="back">Back 7</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card15" data-id="card8">
+            <p class="back">Back 8</p>
+            <img class="front" src="" alt="">
+        </div>
+        <div class="cards" id="card16" data-id="card8">
+            <p class="back">Back 8</p>
+            <img class="front" src="" alt="">
+        </div>
     </div>
+
+
+    <div id="description-container">
+        <div class="description" data-id='card1' hidden>
+            <p class="close-button">X</p>
+            <p>card1</p>
+        </div>
+
+        <div class="description" data-id='card2' hidden>
+            <p class="close-button">X</p>
+            <p>card2</p>
+        </div>
+
+        <div class="description" data-id='card3' hidden>
+            <p class="close-button">X</p>
+            <p>card3</p>
+        </div>
+
+        <div class="description" data-id='card4' hidden>
+            <p class="close-button">X</p>
+            <p>card4</p>
+        </div>
+
+        <div class="description" data-id='card5' hidden>
+            <p class="close-button">X</p>
+            <p>card5</p>
+        </div>
+
+        <div class="description" data-id='card6' hidden>
+            <p class="close-button">X</p>
+            <p>card6</p>
+        </div>
+
+        <div class="description" data-id='card7' hidden>
+            <p class="close-button">X</p>
+            <p>card7</p>
+        </div>
+
+        <div class="description" data-id='card8' hidden>
+            <p class="close-button">X</p>
+            <p>card8</p>
+        </div>
+
+    </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

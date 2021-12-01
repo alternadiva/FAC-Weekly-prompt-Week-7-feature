@@ -41,3 +41,14 @@
 .flip {
   transform: rotateY(180deg);
 }
+
+#description-container {
+  position: absolute;
+  top: 50px;
+}
+
+.description {
+  height: 300px;
+  width: 500px;
+  background-color: coral;
+}
