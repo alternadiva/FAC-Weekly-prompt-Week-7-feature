@@ -10,17 +10,19 @@ The Memory Game website feature is a card game. The cards are laid face down and
 
 ![feature1](https://user-images.githubusercontent.com/85565743/148785930-a1636a9e-d17b-4174-b858-a6179b0394a6.png)
 
-#### Instructions
+#### Game Instructions
 - Flip two cards.
 - Find a match to reveal information about me.
 - Close the information window.
 - Find a new pair.
 
 
-### Programming Languages
+### Markup Languages
 
 - HTML
 - CSS
+
+### Programming Languages
 - JS
 
 ### What's missing
