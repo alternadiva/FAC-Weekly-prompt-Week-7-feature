@@ -2,6 +2,8 @@
 
 ## Memory Card Game
 
+[GitHub Page](https://alternadiva.github.io/fac-weekly-prompt-week-7-feature/)
+
 ### Description
 
 This website feature has been created as part of the application for the Founders and Coders training program in web development. 
